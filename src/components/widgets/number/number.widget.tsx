@@ -15,7 +15,7 @@ const NumberWidget = ({ widget }: props) => {
     () => fetchNumberPokemon(widget.api)
   );
   return (
-    <Box padding={1}>
+    <Box padding={1} data-testid="number-widget">
       {isLoading ? (
         <LoadingNumber />
       ) : (

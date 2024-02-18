@@ -1,6 +1,6 @@
 import { listResult, numberResult } from "../interface";
 
-export const fetchPokemon = async (url: string): Promise<listResult> => {
+export const fetchGenderPokemon = async (url: string): Promise<listResult> => {
   const response = await fetch(url);
   if (!response.ok) {
     throw new Error("Network response was not ok");

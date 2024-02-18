@@ -8,7 +8,7 @@ interface props {
 
 const ListWidget = ({ widgets }: props) => {
   return (
-    <List dense>
+    <List dense data-testid="list-widget">
       <ListItemText primary={widgets.title} secondary={widgets.subtitle} />
       <ItemWidget widget={widgets} />
     </List>

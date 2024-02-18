@@ -2,7 +2,7 @@ import LoadingWidget from "./Loading.widget";
 import { useQuery } from "react-query";
 import { basic, listResult, widgets } from "../../../interface";
 import { List, ListItemText } from "@mui/material";
-import { fetchPokemon } from "../../../services/fetch";
+import { fetchGenderPokemon } from "../../../services/fetch";
 
 interface props {
   widget: widgets;
@@ -11,7 +11,7 @@ interface props {
 const ItemWidget = ({ widget }: props) => {
   const { data, error, isLoading, isError } = useQuery<listResult, Error>(
     [widget.title, widget.api],
-    () => fetchPokemon(widget.api)
+    () => fetchGenderPokemon(widget.api)
   );
 
   return (
