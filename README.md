@@ -4,17 +4,18 @@ Pokemon Dashboard
 
 ## Author
 
-Jimar Zape [https://github.com/jimarzape]
+[Jimar Zape][https://github.com/jimarzape]
 
 ## Getting Started
 
-## Major Dependencies
+### Major Dependencies
 
 Markup : - material - material-ui/core - jest - react-query - typescript
 
 ### Available Scripts
 
-`npm install`
+#### `npm install`
+
 Install all dependencies to run this project
 
 #### `npm start`
