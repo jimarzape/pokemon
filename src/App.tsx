@@ -1,24 +1,20 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React, { useState } from "react";
+import { Box, Container, Grid } from "@mui/material";
+import configuration from "./config/pokemon";
+import { columns } from "./interface";
+import ColumnWidget from "./components/column/index.widget";
 
 function App() {
+  const datColumn = configuration.columns as columns[];
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Container maxWidth={false} sx={{ padding: "5em" }}>
+        <Grid container spacing={5}>
+          {datColumn.map((column: columns, key: number) => {
+            return <ColumnWidget column={column} key={`parent-${key}`} />;
+          })}
+        </Grid>
+      </Container>
     </div>
   );
 }
