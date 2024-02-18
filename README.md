@@ -10,7 +10,11 @@ Pokemon Dashboard
 
 ### Major Dependencies
 
-Markup : - material - material-ui/core - jest - react-query - typescript
+Markup :  - material 
+          - material-ui/core 
+          - jest 
+          - react-query 
+          - typescript
 
 ### Available Scripts
 
