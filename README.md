@@ -4,7 +4,7 @@ Pokemon Dashboard
 
 ## Author
 
-[Jimar Zape][https://github.com/jimarzape]
+[Jimar Zape](https://github.com/jimarzape)
 
 ## Getting Started
 
